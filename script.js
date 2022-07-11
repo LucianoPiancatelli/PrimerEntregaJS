@@ -125,3 +125,7 @@ allClearButtons.addEventListener('click', button =>{
     calculator.clear()
     calculator.updateDisplay()
 })
+
+
+let boton = document.getElementById("Evento")
+boton.onclick = () => {console.log("Usted Presiono")}
