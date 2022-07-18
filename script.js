@@ -126,6 +126,18 @@ allClearButtons.addEventListener('click', button =>{
     calculator.updateDisplay()
 })
 
-
 let boton = document.getElementById("Evento")
 boton.onclick = () => {console.log("Usted Presiono")}
+
+
+let titulo = document.getElementById("titulo")
+
+titulo.innerText = "Calculadora JS Versión 3.0"
+console.log (titulo.innerText)
+
+localStorage.setItem ('calculos', '9999')
+
+
+let calcular = localStorage.getItem ('calculos')
+
+console.log(typeof calcular)
