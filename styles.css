@@ -10,7 +10,7 @@ body{
     background-color: rgb(110, 163, 94);
 }
 
-h1{
+#titulo{
     color: brown;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -70,11 +70,9 @@ button{
 }
 
 
-
 #Evento {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
     margin-left: 300px;
     margin-bottom: 300px;
 }
-
