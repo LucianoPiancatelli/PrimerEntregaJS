@@ -141,3 +141,21 @@ localStorage.setItem ('calculos', '9999')
 let calcular = localStorage.getItem ('calculos')
 
 console.log(typeof calcular)
+
+
+
+
+const btnMostrarAlert = document.getElementById("btn-mostrar-alert");
+
+btnMostrarAlert.onclick = mostrarAlert;
+
+function mostrarAlert(){
+
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 1500
+      })
+}
