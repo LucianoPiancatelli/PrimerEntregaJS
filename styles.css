@@ -70,9 +70,9 @@ button{
 }
 
 
-#Evento {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
+#termino {
     margin-left: 300px;
-    margin-bottom: 300px;
+    margin-bottom: 500px;
+    background-color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
