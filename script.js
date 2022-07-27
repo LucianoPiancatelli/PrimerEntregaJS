@@ -126,8 +126,7 @@ allClearButtons.addEventListener('click', button =>{
     calculator.updateDisplay()
 })
 
-let boton = document.getElementById("Evento")
-boton.onclick = () => {console.log("Usted Presiono")}
+
 
 
 let titulo = document.getElementById("titulo")
@@ -142,20 +141,21 @@ let calcular = localStorage.getItem ('calculos')
 
 console.log(typeof calcular)
 
-
-
-
-const btnMostrarAlert = document.getElementById("btn-mostrar-alert");
-
-btnMostrarAlert.onclick = mostrarAlert;
-
-function mostrarAlert(){
+const btn = document.querySelector('#termino')
+btn.addEventListener('click', () => {
 
     Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Your work has been saved',
-        showConfirmButton: false,
-        timer: 1500
+        title: 'Aceptas Terminos y Condiciones',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Si',
+        denyButtonText: `No`,
+      }).then((result) => {
+      
+        if (result.isConfirmed) {
+          Swal.fire('Aceptaste', '', 'success')
+        } else if (result.isDenied) {
+          Swal.fire('No Aceptaste', '', 'error')
+        }
       })
-}
+})
