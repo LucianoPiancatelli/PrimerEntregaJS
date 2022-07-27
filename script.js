@@ -129,10 +129,6 @@ allClearButtons.addEventListener('click', button =>{
 
 
 
-let titulo = document.getElementById("titulo")
-
-titulo.innerText = "Calculadora JS Versión 3.0"
-console.log (titulo.innerText)
 
 localStorage.setItem ('calculos', '9999')
 
@@ -148,7 +144,7 @@ btn.addEventListener('click', () => {
         title: 'Aceptas Terminos y Condiciones',
         showDenyButton: true,
         showCancelButton: true,
-        confirmButtonText: 'Si',
+        confirmButtonText:'Si',
         denyButtonText: `No`,
       }).then((result) => {
       
